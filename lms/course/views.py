@@ -43,7 +43,9 @@ class CoursesListView(View):
         # Fetch all the courses from the database
 
 
-        data ={'courses': course, 'page':'course-page', 'query': query}
+        # data ={'courses': course, 'page':'course-page', 'query': query}
+
+        data ={'courses': course,}
 
         return render(request, 'courses/courses-list.html',context=data)
 
